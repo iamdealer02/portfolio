@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       fontFamily: {
         'lexend-giga': ['Lexend Giga', 'sans-serif'],
+        'limelight': ['Limelight', 'cursive'],
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

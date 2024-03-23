@@ -1,14 +1,14 @@
 "use client"
-import React, {useRef, useState} from 'react';
+import React from 'react';
 import Welcome from '@/components/shared/Welcome';
-
+import AboutMe from '@/components/shared/AboutMe';
 
 const Home = () => {
 
   return (
     <div>
       <Welcome/>
-
+      <AboutMe/>
 
       {/* Title */}
       {/* Links */}
