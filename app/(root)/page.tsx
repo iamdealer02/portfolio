@@ -2,6 +2,7 @@
 import React from 'react';
 import Welcome from '@/components/shared/Welcome';
 import AboutMe from '@/components/shared/AboutMe';
+import Projects from '@/components/shared/Projects';
 
 const Home = () => {
 
@@ -9,6 +10,7 @@ const Home = () => {
     <div>
       <Welcome/>
       <AboutMe/>
+      <Projects/>
 
       {/* Title */}
       {/* Links */}

@@ -3,7 +3,7 @@ import React from 'react'
 
 const AboutMe = () => {
   return (
-    <div id='aboutMe' className=' mt-28 mb-16 mx-auto '>
+    <div id='aboutMe'  className=' p-28 mt-40 mb-16 mx-auto '>
       <div className='heading flex flex-row justify-center '>
         <div className=' font-limelight  text-4xl'>ABOUT ME</div>
           <Image src='/assets/aboutMe.png' width={100} height={10} alt='aboutme'/>
