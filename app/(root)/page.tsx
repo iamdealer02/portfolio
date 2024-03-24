@@ -3,6 +3,7 @@ import React from 'react';
 import Welcome from '@/components/shared/Welcome';
 import AboutMe from '@/components/shared/AboutMe';
 import Projects from '@/components/shared/Projects';
+import Contact from '@/components/shared/Contact';
 
 const Home = () => {
 
@@ -11,10 +12,7 @@ const Home = () => {
       <Welcome/>
       <AboutMe/>
       <Projects/>
-
-      {/* Title */}
-      {/* Links */}
-      {/* About me */}
+      <Contact/>
     </div>
   );
 };

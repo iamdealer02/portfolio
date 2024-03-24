@@ -1,5 +1,4 @@
 import React from 'react'
-import Image from 'next/image';
 import animationData from '@/public/animation.json';
 import Lottie from "lottie-react";
 import NavBar from './NavBar';

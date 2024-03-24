@@ -42,8 +42,9 @@ const NavBar = () => {
     <Link to="myProjects" smooth={true} duration={500}>
       <button className='text-white bg-custom-gray mr-11  pr-5 pl-5 pt-2 pb-2  text-sm font-lexend-giga  hover:bg-gray-900 hover:scale-105 transition-transform'>MY PROJECTS</button>
     </Link>
-    <button className='text-white bg-custom-gray mr-11  pr-5 pl-5 pt-2 pb-2  text-sm font-lexend-giga  hover:bg-gray-900 hover:scale-105 transition-transform'> CONTACT</button>
-
+    <Link to="contactMe" smooth={true} duration={500}>
+      <button className='text-white bg-custom-gray mr-11  pr-5 pl-5 pt-2 pb-2  text-sm font-lexend-giga  hover:bg-gray-900 hover:scale-105 transition-transform'> CONTACT</button>
+    </Link>
   </div>
 
   </div>
