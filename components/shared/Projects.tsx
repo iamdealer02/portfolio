@@ -3,7 +3,7 @@ import ImageExpand from './ImageExpand'
 
 const Projects = () => {
   return (
-    <div className='mx-auto  md:p-28 p-4' id='myProjects'>
+    <div className='mx-auto  p-4 myProjects' id='myProjects'>
         <div className='flex flex-col items-center justify-center '>
             <div className='font-limelight text-4xl'>MY PROJECTS</div>
             <div className='projects flex flex-col mx-auto mt-10 max-w-5xl  justify-center items-center'>

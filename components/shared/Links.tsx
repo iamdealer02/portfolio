@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 const Links = () => {
   return (
-    <div className='relative md:fixed links p-5 ml-5  border rounded-md border-solid border-white-100 flex flex-col justify-start self-center md:items-end md:self-end w-fit'>
+    <div className= ' links relative links p-5 ml-5  border rounded-md border-solid border-white-100 flex flex-col justify-start self-center md:items-end md:self-end w-fit'>
             <div className='font-lexend-giga text-sm text-center mt-4 w-fit'>
                 
                 <Image  src={'/assets/pfp.png'} className='mb-11' alt='Upasana' width={200} height={200}/>
