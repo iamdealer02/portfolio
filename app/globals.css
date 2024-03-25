@@ -55,3 +55,40 @@ body {
     width: 300px;
   }
 }
+/* styles.css */
+@keyframes expand {
+  from {
+    width: 0;
+    height: 0;
+  }
+  to {
+    width: 1000px;
+    height: 1000px;
+  }
+}
+
+.expand-animation {
+  animation: expand 0.5s forwards;
+  height: fit-content;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.myProjects {
+  @media (max-width: 1560px) {
+    padding: 20%;
+  }
+}
+.links {
+  position: fixed; /* By default, set the position to fixed */
+}
+
+@media (max-width: 1300px) {
+  .links {
+    position: relative; /* When viewport width is less than or equal to 1300px, change position to relative */
+  }
+}
+
+
+

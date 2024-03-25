@@ -1,10 +1,28 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import animationData from '@/public/animation.json';
 import Lottie from "lottie-react";
 import NavBar from './NavBar';
 import Links from './Links';
 
 const Welcome = () => {
+  const [text, setText] = useState('');
+  // when component is viewed the text is set 
+  useEffect(() => {
+    let index = 0;
+    const text = "< UPASANA'S PORTFOLIO />";
+    const timer = setInterval(() => {
+      if (index < text.length-1) {
+        setText(prev => prev + text[index]);
+        index++;
+      } else {
+        clearInterval(timer);
+      }
+    }, 100);
+
+    // Clean up the interval on component unmount
+    return () => clearInterval(timer);
+  }, []);
+  
   return (
     <div className='h-screen '> {/* Added h-screen class to make the div match the screen height */}
   <svg className='hidden md:block  absolute top-0 right-0' width="314" height="850" viewBox="0 0 314 850" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -26,7 +44,7 @@ const Welcome = () => {
         </svg>
 
         <div className='font-lexend-giga md:text-4xl text-lg text-center md:mt-4 mt-0'>
-        {'< UPASANA\'S PORTFOLIO />'}
+        {text}
         </div>
     </div>
     <div className=' md:grid md:grid-flow-col md:grid-col-3 flex flex-col w-full'>
