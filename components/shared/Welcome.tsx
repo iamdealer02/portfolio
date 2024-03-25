@@ -5,23 +5,23 @@ import NavBar from './NavBar';
 import Links from './Links';
 
 const Welcome = () => {
+
   const [text, setText] = useState('');
   const [index, setIndex] = useState(0);
-  // when component is viewed the text is set 
-  useEffect(() => {
-    const text = "< UPASANA'S PORTFOLIO />";
-    const timer = setInterval(() => {
-      if (index < text.length-1) {
-        setText(prev => prev + text[index]);
-        setIndex(prev => prev + 1);
-      } else {
-        clearInterval(timer);
-      }
-    }, 100);
 
-    // Clean up the interval on component unmount
-    return () => clearInterval(timer);
-  }, []);
+  useEffect(() => {
+    const fullText = "< UPASANA'S PORTFOLIO />";
+    const timer = setInterval(() => {
+      if (index < fullText.length) {
+        setText(prev => prev + fullText[index]); // Append the next character to the text
+        setIndex(prev => prev + 1); // Increment the index
+      } else {
+        clearInterval(timer); // Clear the interval when all characters are displayed
+      }
+    }, 100); // Adjust the delay between characters as needed
+
+    return () => clearInterval(timer); // Cleanup function to clear the interval on unmount
+  }, [index]); 
   
   return (
     <div className='h-screen '> {/* Added h-screen class to make the div match the screen height */}
