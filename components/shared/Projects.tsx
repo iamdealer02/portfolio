@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 const Projects = () => {
@@ -17,7 +18,7 @@ const Projects = () => {
                         Generative filling and Background removal.
                     </div>
                     <div className='project-img ml-7 flex-1'>
-                        <img src='/assets/project1.png' alt='project1' />
+                        <Image src='/assets/project1.png' alt='project1' />
                     </div>
                 </div>
                 <button className='text-white bg-custom-gray mr-11  pr-5 pl-5 pt-2 pb-2 mt-10 text-sm font-lexend-giga  hover:bg-gray-900 hover:scale-105 transition-transform '>
@@ -37,7 +38,7 @@ const Projects = () => {
                         Boober serves as a practical exploration of web development concepts, Flask framework features, and integration with third-party services.
                     </div>
                     <div className='project-img ml-7 flex-1'>
-                        <img src='/assets/project2.png'   alt='project1' className=''/>
+                        <Image src='/assets/project2.png'   alt='project1' className=''/>
                     </div>
                 </div>
                 <button className='text-white bg-custom-gray mr-11  pr-5 pl-5 pt-2 pb-2 mt-10 text-sm font-lexend-giga  hover:bg-gray-900 hover:scale-105 transition-transform '>
@@ -57,7 +58,7 @@ const Projects = () => {
                          This comprehensive guide provides step-by-step instructions on setting up, developing, and deploying a Twitter-like application.
                     </div>
                     <div className='project-img ml-7 flex-1'>
-                        <img src='/assets/project3.png'   alt='project1' className=''/>
+                        <Image src='/assets/project3.png'   alt='project1' className=''/>
                     </div>
                 </div>
                 <button className='text-white bg-custom-gray mr-11  pr-5 pl-5 pt-2 pb-2 mt-10 text-sm font-lexend-giga  hover:bg-gray-900 hover:scale-105 transition-transform '>
