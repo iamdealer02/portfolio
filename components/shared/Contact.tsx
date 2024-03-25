@@ -35,7 +35,7 @@ const Contact = () => {
     <div id='contactMe' className='mt-20 mb-16 mx-auto'>
         <div className='heading flex flex-col justify-center items-center'>
             <div className='font-limelight text-4xl'>GET IN TOUCH</div>
-            <div className='flex flex-row justify-center items-center'>
+            <div className='flex md:flex-row flex-col justify-center items-center'>
                 <Lottie
             animationData={animationData}
             className="mr-5 mb-0"
@@ -101,7 +101,7 @@ const Contact = () => {
             
         </div>
         <div className='flex flex-col justify-center items-center mt-10'>
-            <div className='project-desc font-lexend-giga flex-1'>
+            <div className='project-desc font-lexend-giga flex-1 p-1'>
             Feel free to reach out to me for any queries, collaborations, or just to say hi!
             </div>
             <div className='mail mt-4'>

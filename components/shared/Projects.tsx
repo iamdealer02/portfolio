@@ -2,15 +2,15 @@ import React from 'react'
 
 const Projects = () => {
   return (
-    <div className='mx-auto  p-28' id='myProjects'>
+    <div className='mx-auto  md:p-28 p-4' id='myProjects'>
         <div className='flex flex-col items-center justify-center '>
             <div className='font-limelight text-4xl'>MY PROJECTS</div>
             <div className='projects flex flex-col mx-auto mt-10 max-w-5xl  justify-center items-center'>
-                <div className='project-heading font-lexend-giga text-2xl'>PROJECT 1 : AI SAAS PLATFORM</div>
+                <div className='project-heading font-lexend-giga md:text-2xl text-lg'>PROJECT 1 : AI SAAS PLATFORM</div>
                 {/* HR LINE */}
                 <div className=' w-full h-1 bg-white mt-2'></div>
-                    <div className='flex flex-row justify-center items-center mt-5'>
-                        <div className='project-desc font-lexend-giga flex-1'>
+                    <div className='flex md:flex-row flex-col justify-center items-center mt-5'>
+                        <div className='project-desc   font-lexend-giga flex-1'>
                         AI image SaaS Platform that excels processing capabilities, integrates a secure
                         payment infrastructure, offers advanced image search functionalities.
                         Supports multiple AI features: Image Restoration, Recoloring, Object Removal,
@@ -27,11 +27,11 @@ const Projects = () => {
 
             {/* project 2  */}
             <div className='projects flex flex-col mx-auto mt-10 max-w-5xl  justify-center items-center'>
-                <div className='project-heading font-lexend-giga text-2xl'>PROJECT 2 : RIDE AND DRIVE WITH BOOBER</div>
+                <div className='project-heading font-lexend-giga md:text-2xl text-lg'>PROJECT 2 : RIDE AND DRIVE WITH BOOBER</div>
                 {/* HR LINE */}
                 <div className=' w-full h-1 bg-white mt-2'></div>
-                    <div className='flex flex-row justify-center items-center mt-5'>
-                        <div className='project-desc font-lexend-giga flex-1'>
+                    <div className='flex md:flex-row flex-col justify-center items-center mt-5'>
+                        <div className='project-desc   font-lexend-giga flex-1'>
                         Boober is a web application built using the Flask framework, aiming to replicate the core functionalities of the popular ride-sharing service, Uber. 
                         Developed by Upasana Sharma as part of an International Bachelor's in Computer Science program,
                         Boober serves as a practical exploration of web development concepts, Flask framework features, and integration with third-party services.
@@ -47,11 +47,11 @@ const Projects = () => {
 
             {/* project 3 */}
             <div className='projects flex flex-col mx-auto mt-10 max-w-5xl  justify-center items-center'>
-                <div className='project-heading font-lexend-giga text-2xl'>PROJECT 3 : SOCIAL MEDIA INTERACTIVE PLATFORM</div>
+                <div className='project-heading font-lexend-giga md:text-2xl text-lg'>PROJECT 3 : SOCIAL MEDIA INTERACTIVE PLATFORM</div>
                 {/* HR LINE */}
                 <div className=' w-full h-1 bg-white mt-2'></div>
-                    <div className='flex flex-row justify-center items-center mt-5'>
-                        <div className='project-desc font-lexend-giga flex-1'>
+                    <div className='flex md:flex-row flex-col justify-center items-center mt-5'>
+                        <div className='project-desc    font-lexend-giga flex-1'>
                         The Twitter Clone project aims to replicate the core functionalities of 
                         the popular social media platform Twitter using the MERN stack (MongoDB, Express.js, React.js, Node.js).
                          This comprehensive guide provides step-by-step instructions on setting up, developing, and deploying a Twitter-like application.

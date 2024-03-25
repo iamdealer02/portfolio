@@ -48,3 +48,10 @@ body {
   opacity: 1;
   pointer-events: auto; 
 }
+.studyAnimation{
+  width: 500px;
+  /* media query */
+  @media (max-width: 768px) {
+    width: 300px;
+  }
+}
