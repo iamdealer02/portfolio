@@ -6,14 +6,14 @@ import Links from './Links';
 
 const Welcome = () => {
   const [text, setText] = useState('');
+  const [index, setIndex] = useState(0);
   // when component is viewed the text is set 
   useEffect(() => {
-    let index = 0;
     const text = "< UPASANA'S PORTFOLIO />";
     const timer = setInterval(() => {
       if (index < text.length-1) {
         setText(prev => prev + text[index]);
-        index++;
+        setIndex(prev => prev + 1);
       } else {
         clearInterval(timer);
       }
