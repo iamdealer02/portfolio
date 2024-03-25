@@ -1,5 +1,5 @@
-import Image from 'next/image'
 import React from 'react'
+import ImageExpand from './ImageExpand'
 
 const Projects = () => {
   return (
@@ -18,7 +18,7 @@ const Projects = () => {
                             Generative filling and Background removal.
                         </div>
                     <div className='project-img ml-7 flex-1'>
-                        <Image src='/assets/project1.png' alt='project1' />
+                        <ImageExpand src='/assets/project1.png' width={500} height={500} alt='project1' />
                     </div>
                 </div>
                 <button className='text-white bg-custom-gray mr-11  pr-5 pl-5 pt-2 pb-2 mt-10 text-sm font-lexend-giga  hover:bg-gray-900 hover:scale-105 transition-transform '>
@@ -40,7 +40,7 @@ const Projects = () => {
                
 
                     <div className='project-img ml-7 flex-1'>
-                        <Image src='/assets/project2.png'   alt='project1' className=''/>
+                        <ImageExpand src='/assets/project2.png'  width={500} height={500}   alt='project1' />
                     </div>
                 </div>
                 <button className='text-white bg-custom-gray mr-11  pr-5 pl-5 pt-2 pb-2 mt-10 text-sm font-lexend-giga  hover:bg-gray-900 hover:scale-105 transition-transform '>
@@ -60,7 +60,7 @@ const Projects = () => {
                          This comprehensive guide provides step-by-step instructions on setting up, developing, and deploying a Twitter-like application.
                     </div>
                     <div className='project-img ml-7 flex-1'>
-                        <Image src='/assets/project3.png'   alt='project1' className=''/>
+                        <ImageExpand src='/assets/project3.png'  width={500} height={500}   alt='project1' />
                     </div>
                 </div>
                 <button className='text-white bg-custom-gray mr-11  pr-5 pl-5 pt-2 pb-2 mt-10 text-sm font-lexend-giga  hover:bg-gray-900 hover:scale-105 transition-transform '>
