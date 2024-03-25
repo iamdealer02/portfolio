@@ -1,7 +1,7 @@
 import nodemailer from 'nodemailer';
 import { NextApiRequest, NextApiResponse } from 'next';
 
-export default async (req: NextApiRequest, res: NextApiResponse) => {
+const submitForm = (req: NextApiRequest, res: NextApiResponse) => {
   
   const { name, email, message } = req.body;
 
@@ -19,7 +19,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
   });
 
   try {
-    await transporter.sendMail({
+     transporter.sendMail({
       from: process.env.EMAIL,
       to: process.env.RECEIVER,
       subject: `New message from ${name}, ${email}`,
@@ -33,3 +33,5 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
     res.status(500).json({ success: false });
   }
 };
+
+export default submitForm;

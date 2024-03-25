@@ -11,12 +11,12 @@ const Projects = () => {
                 {/* HR LINE */}
                 <div className=' w-full h-1 bg-white mt-2'></div>
                     <div className='flex md:flex-row flex-col justify-center items-center mt-5'>
-                        <div className='project-desc   font-lexend-giga flex-1'>
-                        AI image SaaS Platform that excels processing capabilities, integrates a secure
-                        payment infrastructure, offers advanced image search functionalities.
-                        Supports multiple AI features: Image Restoration, Recoloring, Object Removal,
-                        Generative filling and Background removal.
-                    </div>
+                        <div className='project-desc font-lexend-giga flex-1'>
+                            AI image SaaS Platform that excels processing capabilities, integrates a secure
+                            payment infrastructure, offers advanced image search functionalities.
+                            Supports multiple AI features: Image Restoration, Recoloring, Object Removal,
+                            Generative filling and Background removal.
+                        </div>
                     <div className='project-img ml-7 flex-1'>
                         <Image src='/assets/project1.png' alt='project1' />
                     </div>
@@ -31,12 +31,14 @@ const Projects = () => {
                 <div className='project-heading font-lexend-giga md:text-2xl text-lg'>PROJECT 2 : RIDE AND DRIVE WITH BOOBER</div>
                 {/* HR LINE */}
                 <div className=' w-full h-1 bg-white mt-2'></div>
-                    <div className='flex md:flex-row flex-col justify-center items-center mt-5'>
-                        <div className='project-desc   font-lexend-giga flex-1'>
+                <div className='flex md:flex-row flex-col justify-center items-center mt-5'>
+                    <div className='project-desc font-lexend-giga flex-1'>
                         Boober is a web application built using the Flask framework, aiming to replicate the core functionalities of the popular ride-sharing service, Uber. 
-                        Developed by Upasana Sharma as part of an International Bachelor's in Computer Science program,
+                        Developed by Upasana Sharma as part of an International Bachelor&apos;s in Computer Science program,
                         Boober serves as a practical exploration of web development concepts, Flask framework features, and integration with third-party services.
                     </div>
+               
+
                     <div className='project-img ml-7 flex-1'>
                         <Image src='/assets/project2.png'   alt='project1' className=''/>
                     </div>
