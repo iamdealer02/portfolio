@@ -5,57 +5,43 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 255, 255, 255; /* White by default */
-  --background-start-rgb: 4, 4, 4; /* Dark mode background color */
-  --background-end-rgb: 4, 4, 4; /* Dark mode background color */
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    --foreground-rgb: 0, 0, 0; /* Black in light mode */
-    --background-start-rgb: 214, 219, 220; /* Light mode background color */
-    --background-end-rgb: 255, 255, 255; /* Light mode background color */
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-    to bottom,
-    rgb(var(--background-start-rgb)),
-    rgb(var(--background-end-rgb))
-  );
+  color: rgb(255, 255, 255); /* White text color */
+  background-color: #000; /* Black background color */
 }
 
-.bg-custom-gray{
-  background-color: #606060
+.bg-custom-gray {
+  background-color: #606060;
 }
+
 .overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); 
-  z-index: 1000; 
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
   opacity: 0;
-  pointer-events: none; 
+  pointer-events: none;
   transition: opacity 0.3s ease;
 }
 
 .overlay.show {
   opacity: 1;
-  pointer-events: auto; 
+  pointer-events: auto;
 }
-.studyAnimation{
+
+.studyAnimation {
   width: 500px;
-  /* media query */
-  @media (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
+  .studyAnimation {
     width: 300px;
   }
 }
-/* styles.css */
+
 @keyframes expand {
   from {
     width: 0;
@@ -75,11 +61,13 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .myProjects {
   @media (max-width: 1560px) {
     padding: 20%;
   }
 }
+
 .links {
   position: fixed; /* By default, set the position to fixed */
 }
@@ -89,6 +77,3 @@ body {
     position: relative; /* When viewport width is less than or equal to 1300px, change position to relative */
   }
 }
-
-
-
