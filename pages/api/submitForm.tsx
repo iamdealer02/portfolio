@@ -1,7 +1,7 @@
 import nodemailer from 'nodemailer';
 import { NextApiRequest, NextApiResponse } from 'next';
 
-const submitForm = (req: NextApiRequest, res: NextApiResponse) => {
+const submitForm = async (req: NextApiRequest, res: NextApiResponse) => {
   
   const { name, email, message } = req.body;
 
@@ -19,7 +19,7 @@ const submitForm = (req: NextApiRequest, res: NextApiResponse) => {
   });
 
   try {
-     transporter.sendMail({
+     await transporter.sendMail({
       from: process.env.EMAIL,
       to: process.env.RECEIVER,
       subject: `New message from ${name}, ${email}`,
